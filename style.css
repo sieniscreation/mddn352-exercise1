@@ -1,0 +1,63 @@
+/*
+There are two sections in this CSS. First sets up the default style, and the second creates an alternative style for when width is less than 480px.
+*/
+
+
+body {
+    background-color:#ffc979;
+    color: #000;
+    padding: 20px;
+    font-family: sans-serif;
+    border: 1px solid #DDD
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul li {
+    display: inline;
+    border: 5px solid  red;
+    padding: 10px;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+a {
+    display; inline;
+    background-color: #AAA;
+    padding: 2px;
+    color: #FFF;
+    font-family:monospace;
+}
+
+@media only screen and (min-width: 1300px) {
+  body {
+    background-color: #87cfff;
+  }
+  h1{
+    font-size: 2.7em;
+  }
+  #content, #footer{
+    color: #87cfff;
+  }
+    }
+
+    @media only screen and (max-width: 700px) {
+
+    body {
+    background-color: #ce93ff;
+    color: #FFF;
+    }
+    
+    nav ul li {
+    display: block;
+    border: 5px solid yellow;
+    margin-right: 10px;
+    }
+}
+
+/*Try multiple width breaks for different devices */
